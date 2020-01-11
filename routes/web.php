@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+    return view('login');
+})->name("login");
+
+Route::get('/register', function () {
+    return view('register');
+})->name("register");
+
+Route::get('/forgot-password', function () {
+    return view('forgot-password');
+})->name("forgot-password");
+
+
